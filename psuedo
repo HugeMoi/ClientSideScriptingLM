@@ -1,0 +1,45 @@
+variable Today Date = new Date
+variable Current Day = Today Date, Get Day
+
+SWITCH (Current Day)
+CASE 0: 
+
+print Sunday 
+print HorrorHouse is closed on Sunday.
+
+ENDCASE
+
+CASE 1 (Monday) to CASE 5 (Friday): 
+
+print Monday(1) to Friday(5), depending on CASE / day
+print HorrorHouse is open on Monday / Friday.
+
+ENDCASE
+
+CASE 6: 
+
+print Saturday
+print HorrorHouse is closed on Saturday.
+
+ENDCASE
+
+function navBar
+
+variable Nav = button link to Index Page // This variable will always be present, linking to index page.
+variable Nav += button link to Other Page // This variable will be used to multiple pages.
+
+return Nav
+END Function
+
+Print in Element ID "NavBar"
+
+function BuildCalender 
+
+VARIABLE months = Jan to December
+VARIABLE days = Mon to Sun
+VARIABLE Today Date = New Date
+VARIABLE ScanToday = Get Year, Get Month, Get Date
+
+Create Divs / Table for: Month / Year, Day, Date
+
+END function

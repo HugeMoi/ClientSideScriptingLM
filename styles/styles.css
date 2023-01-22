@@ -1,0 +1,464 @@
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Website Format*/
+body {
+  font: normal 90% 'trebuchet ms', arial, sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(75, 0, 0));
+  /* Gives Gradient Background */
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  /* Stops weird clipping issues with gradient background */
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+p {
+  padding: 0 0 15px 0;
+  line-height: 1.7em;
+}
+
+img {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: bold 175% 'century gothic', arial, sans-serif;
+  color: #e00000;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+}
+
+h5,
+h6 {
+  font: italic 95% arial, sans-serif;
+  padding: 0 0 15px 0;
+}
+
+.HeaderGradient {
+  background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(143, 0, 0));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+a,
+a:hover {
+  outline: none;
+  text-decoration: underline;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul {
+  margin: 2px 0 22px 17px;
+}
+
+ul li {
+  list-style-type: circle;
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  font-weight: bold;
+}
+
+ol {
+  margin: 8px 0 22px 20px;
+}
+
+ol li {
+  margin: 0 0 11px 0;
+}
+
+#MainBox,
+#Logo,
+#TaskBar,
+#SiteContent,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header {
+  background: transparent;
+  height: 200px;
+}
+
+#Logo {
+  width: 50%;
+  position: relative;
+  height: 75%;
+}
+
+#Logo #LogoText {
+  position: relative;
+  top: 10%;
+  left: 35%;
+}
+
+#Logo h1,
+#Logo h2 {
+  font: normal 300% 'century gothic', arial, sans-serif;
+  font-size: 35px;
+  font-family: 'HorrorFont';
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#LogoText h1,
+#LogoText h1 a,
+#LogoText h1 a:hover {
+  padding: 20px 0 0 0;
+  color: #000;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+#LogoText h1 a .LogoColour1 {
+  color: rgb(228, 0, 0);
+}
+
+#LogoText h1 a .LogoColour2 {
+  color: #eeeeee;
+}
+
+#LogoText h2 {
+  font-size: 100%;
+  padding: 1% 0 0 0;
+  color: rgb(255, 255, 255);
+}
+
+#TaskBar {
+  width: 50%;
+  min-width: 10%;
+  height: 30px;
+  position: absolute;
+  float: left;
+  margin-left: 25%;
+  padding: 0;
+  background: rgb(255, 255, 255);
+}
+
+#SiteContent {
+  min-width: 2vw;
+  height: 50%;
+  width: 60%;
+  overflow: hidden;
+  position: relative;
+  left: 0%;
+  margin: auto;
+  padding: 0 24px 20px 20px;
+  background: rgb(255, 255, 255);
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+  padding: 0 15px 20px 15px;
+}
+
+.supportsidebar {
+  float: right;
+  width: 40%;
+  padding: 0 15px 20px 15px;
+}
+
+.sidebar ul {
+  width: 10%;
+  padding: 4px 0 0 0;
+  margin: 4px 0 15px 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 0 0 7px 0;
+}
+
+#content {
+  /* content of page */
+  text-align: left;
+  float: left;
+  width: 50%;
+  padding: 0;
+}
+
+#contentNoSidebar {
+  /* content if there is no sidebar */
+  text-align: center;
+  float: left;
+  width: 60%;
+  padding: 0;
+}
+
+#content ul {
+  margin: 2px 0 22px 0px;
+}
+
+#content ul li {
+  list-style-type: none;
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;
+}
+
+#footer {
+  width: 50%;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 10%;
+  padding: 24px 0 5px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#colours {
+  height: 0px;
+  text-align: right;
+  padding: 66px 16px 0px 300px;
+}
+
+img.resize {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+/* form CSS */
+.form_settings {
+  margin: 15px 0 0 0;
+}
+
+.form_settings p {
+  padding: 0 0 4px 0;
+}
+
+.form_settings span {
+  float: left;
+  width: 200px;
+  text-align: left;
+}
+
+.form_settings input,
+.form_settings textarea {
+  padding: 5px;
+  width: 299px;
+  font: 100% arial;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+  color: #47433F;
+}
+
+.form_settings .SubmitButton {
+  font: 100% arial;
+  border: 1px solid;
+  width: 100px;
+  margin: 0 0 0 212px;
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer;
+  background: #000;
+  color: #FFF;
+}
+
+.form_settings textarea,
+.form_settings select {
+  font: 100% arial;
+  width: 299px;
+}
+
+.form_settings select {
+  width: 310px;
+}
+
+.form_settings .checkbox {
+  margin: 4px 0;
+  padding: 0;
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+/* Images */
+#HorrorStore {
+  border: 3px black;
+  border-style: outset;
+  width: 50%;
+  left: 25%;
+  position: relative;
+  box-shadow: #000 2px 3px 4px 2px
+}
+
+#HorrorStoreFindUs {
+  border: 3px black;
+  border-style: outset;
+  left: 15%;
+  width: 75%;
+  position: relative;
+  box-shadow: #000 2px 3px 4px 2px
+}
+
+#HorrorCrate {
+  width: 50%;
+  left: 25%;
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#Support {
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#halloween {
+  width: 75%;
+  height: 50%;
+  left: 0%;
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+#construction {
+  width: 75%;
+  height: 30%;
+  left: 15%;
+  position: relative;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+/* Calender Styles */
+.main {
+  width: 100%;
+  box-shadow: black 1px 1px 1px 1px;
+}
+
+.month {
+  background-color: black;
+  font: bold 12px verdana;
+  color: rgb(255, 105, 105);
+}
+
+.daysofweek {
+  background-color: rgb(54, 54, 54);
+  font: bold 12px verdana;
+  color: white;
+}
+
+.days {
+  font-size: 12px;
+  font-family: verdana;
+  font-weight: bold;
+  color: black;
+  background-image: linear-gradient(to bottom right, rgb(255, 30, 30), rgb(255, 15, 15));
+  padding: 2px;
+}
+
+.days #today {
+  font-weight: bold;
+  color: rgb(247, 247, 247);
+}
+
+/* Nav Bar Style */
+
+    
+    /* CSS for button */
+.button1 {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button1:hover {
+  color: #ffffff;
+  background-color: #530000;
+}
+
+@media all and (max-width:30em) {
+  a.button1 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+/* CSS for Gallery*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}

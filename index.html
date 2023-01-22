@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" type="Text/CSS" href="styles/styles.css"> <!-- Styles -->
+  </link>
+  <script defer src="scripts/navBar.js" type="text/javascript"></script> <!-- Call Navbar-->
+  <!-- This doesn't work until I defer the script. Why? -->
+  <style>
+    @font-face {
+      font-family: HorrorFont;
+      src: url(Font/Another\ Danger\ -\ Demo.otf);
+    }
+  </style>
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="Logo">
+        <div id="LogoText">
+          <h1><a href="index.html"><span class="LogoColour2"> Horror</span><span class="LogoColour1"> House</span><span
+                class="LogoColour2"></span></a></h1>
+          <!-- Span Class to give Logo two different colours, independant of h1 and h2 variables-->
+          <h2>Bringing you the frights and sleepless nights...</h2>
+        </div>
+      </div>
+      <div id="TaskBar">
+        <p id="navBar"></p>
+      </div>
+    </div>
+    <div id="SiteContent">
+      <div id="contentNoSideBar">
+        <h1><span class="HeaderGradient">Who are we?</span></h1>
+        <p>We're a small store opening up shortly dedicated to being a celebration of all things horror, whether old or
+          new!</p>
+        <img src="images/HorrorStore" id="HorrorStore" alt="Horror Store" title="Our Shop"></img>
+
+        <p><br>We offer merchandise found only at our store and a monthly subscription service, called HorrorBox, where
+          we send you exclusive goodies each month!</p>
+        <h2><span class="HeaderGradient">Horrorbox</span></h2>
+        <p>HorrorBox is a unique monthly subscription service that delivers spooky goodies straight to your door!</p>
+        <p>We deliver things such as:</p>
+        <ul>
+          <li>T-Shirts</li>
+          <li>Blu-ray DVDs</li>
+          <li>Merchandise hand-crafted by our very store</li>
+        </ul>
+        <img src="images/HorrorCrate.png" id="HorrorCrate" alt="Horror Box" title="Horror Box"></img>
+        <h2><span class="HeaderGradient">Are we open?</span></h2>
+        <p> Our opening times are currently as follows:</p>
+        <p style="font-weight: bold;">Monday: 9:00 till 17:00<br>Tuesday: 9:00 till 17:00<br>Wednesday: 9:00 till
+          17:00<br>Thursday: 9:00 till 17:00<br>Friday: 9:00 till 15:00</p>
+        <script type="text/javascript">
+          var todaydate = new Date()
+            var currentday = todaydate.getDay();
+
+            switch (currentday) {
+              case 0:
+                document.writeln("<h1>Sunday</h1>");
+                document.writeln("HorrorHouse is closed on Sunday. Catch us next time on Monday!");
+                break;
+              case 1:
+                document.writeln("<h1>Monday</h1>");
+                document.writeln("HorrorHouse is open on Monday from 9am till 5pm.");
+                break;
+              case 2:
+                document.writeln("<h1Tuesday</h1>");
+                document.writeln("HorrorHouse is open on Tuesday from 9am till 5pm.");
+                break;
+              case 3:
+                document.writeln("<h1>Wednesday</h1>");
+                document.writeln("HorrorHouse is open on Wednesday from 9am till 5pm.");
+                break;
+              case 4:
+                document.writeln("<h1r>Thursday</h1>");
+                document.writeln("HorrorHouse is open on Thursday from 9am till 5pm.");
+                break;
+              case 5:
+                document.writeln("<h1>Friday</h1>");
+                document.writeln("HorrorHouse is open on Friday from 9am till 3pm.");
+                break;
+              case 6:
+                document.writeln("<h1>Saturday</h1>");
+                document.writeln("HorrorHouse is closed on Saturday. Catch us next time on Monday!");
+                break;
+            }
+        </script>
+      </div>
+    </div>
+    <div id="footer">
+      HorrorHouse | Luke Miles | BMC212253486
+    </div>
+  </div>
+</body>
+
+</html>

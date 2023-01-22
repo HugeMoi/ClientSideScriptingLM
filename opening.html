@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" type="Text/CSS" href="styles/styles.css">
+  </link>
+  <script defer src="scripts/navBar.js" type="text/javascript"></script>
+  <script src="scripts/basiccal.js" type="text/javascript"></script>
+  <style>
+    @font-face {
+      font-family: HorrorFont;
+      src: url(Font/Another\ Danger\ -\ Demo.otf);
+    }
+  </style>
+  <title>Openings</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="Logo">
+        <div id="LogoText">
+          <h1><a href="index.html"><span class="LogoColour2"> Horror</span><span class="LogoColour1"> House</span><span
+                class="LogoColour2"></span></a></h1>
+          <h2>Bringing you the frights and sleepless nights...</h2>
+        </div>
+      </div>
+      <div id="TaskBar">
+        <ul id="TaskbarButton">
+          <p id="navBar"> </p>
+      </div>
+    </div>
+    <div id="SiteContent">
+      <div class="sidebar">
+        <br> <br><br> <br>
+        <script type="text/javascript">
+
+          var todaydate = new Date()
+          var curmonth = todaydate.getMonth() + 1 //get current month (1-12)
+          var curyear = todaydate.getFullYear() //get current year
+
+          document.write(buildCal(curmonth, curyear, "main", "month", "daysofweek", "days", 1));
+        </script>
+      </div>
+      <div id="content">
+        <h1><span class="HeaderGradient">Opening Times</span></h1>
+        <p> Our opening times are currently as follows:</p>
+        <p style="font-weight: bold;">Monday: 9:00 till 17:00<br>Tuesday: 9:00 till 17:00<br>Wednesday: 9:00 till
+          17:00<br>Thursday: 9:00 till 17:00<br>Friday: 9:00 till 15:00<br>Saturday: Closed<br>Sunday: Closed<br></p>
+        <script type="text/javascript">
+          var todaydate = new Date()
+          var currentday = todaydate.getDay();
+
+          switch (currentday) {
+            case 0:
+              document.writeln("<h1>Sunday</h1>");
+              document.writeln("HorrorHouse is closed on Sunday. Catch us next time on Monday!");
+              break;
+            case 1:
+              document.writeln("<h1>Monday</h1>");
+              document.writeln("HorrorHouse is open on Monday from 9am till 5pm.");
+              break;
+            case 2:
+              document.writeln("<h1Tuesday</h1>");
+              document.writeln("HorrorHouse is open on Tuesday from 9am till 5pm.");
+              break;
+            case 3:
+              document.writeln("<h1>Wednesday</h1>");
+              document.writeln("HorrorHouse is open on Wednesday from 9am till 5pm.");
+              break;
+            case 4:
+              document.writeln("<h1r>Thursday</h1>");
+              document.writeln("HorrorHouse is open on Thursday from 9am till 5pm.");
+              break;
+            case 5:
+              document.writeln("<h1>Friday</h1>");
+              document.writeln("HorrorHouse is open on Friday from 9am till 3pm.");
+              break;
+            case 6:
+              document.writeln("<h1>Saturday</h1>");
+              document.writeln("HorrorHouse is closed on Saturday. Catch us next time on Monday!");
+              break;
+          }
+        </script>
+
+      </div>
+    </div>
+    <div id="footer">
+      HorrorVerse | Luke Miles | BMC212253486
+    </div>
+  </div>
+
+</body>
+
+</html>
